@@ -1,6 +1,3 @@
-// ========================================
-// Mobile Navigation Toggle
-// ========================================
 const navToggle = document.querySelector(".nav-toggle")
 const navMenu = document.querySelector(".nav-menu")
 const navLinks = document.querySelectorAll(".nav-link")
@@ -10,7 +7,6 @@ navToggle.addEventListener("click", () => {
   navMenu.classList.toggle("active")
 })
 
-// Close menu when clicking a link
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     navToggle.classList.remove("active")
@@ -18,9 +14,6 @@ navLinks.forEach((link) => {
   })
 })
 
-// ========================================
-// Project Accordion Functionality
-// ========================================
 const projectHeaders = document.querySelectorAll(".project-header")
 
 projectHeaders.forEach((header) => {
@@ -28,13 +21,11 @@ projectHeaders.forEach((header) => {
     const projectItem = header.parentElement
     const isActive = projectItem.classList.contains("active")
 
-    // Close all other projects
     document.querySelectorAll(".project-item").forEach((item) => {
       item.classList.remove("active")
       item.querySelector(".project-header").setAttribute("aria-expanded", "false")
     })
 
-    // Toggle current project
     if (!isActive) {
       projectItem.classList.add("active")
       header.setAttribute("aria-expanded", "true")
@@ -42,9 +33,6 @@ projectHeaders.forEach((header) => {
   })
 })
 
-// ========================================
-// Skill Bar Animation
-// ========================================
 const animateSkillBars = () => {
   const skillBars = document.querySelectorAll(".skill-progress")
 
@@ -54,7 +42,6 @@ const animateSkillBars = () => {
   })
 }
 
-// Intersection Observer for skill bars
 const aboutSection = document.querySelector(".about")
 const skillObserver = new IntersectionObserver(
   (entries) => {
@@ -72,9 +59,6 @@ if (aboutSection) {
   skillObserver.observe(aboutSection)
 }
 
-// ========================================
-// Smooth Scroll for Navigation
-// ========================================
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -92,9 +76,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// ========================================
-// Active Navigation Link Highlighting
-// ========================================
 const sections = document.querySelectorAll("section[id]")
 
 const highlightNav = () => {
@@ -118,9 +99,6 @@ const highlightNav = () => {
 
 window.addEventListener("scroll", highlightNav)
 
-// ========================================
-// Typing Effect (Optional Enhancement)
-// ========================================
 const typeWriter = (element, text, speed = 50) => {
   let i = 0
   element.textContent = ""
@@ -136,8 +114,6 @@ const typeWriter = (element, text, speed = 50) => {
   type()
 }
 
-// Initialize on page load
 document.addEventListener("DOMContentLoaded", () => {
-  // Add any initialization code here
   console.log("Portfolio loaded successfully!")
 })

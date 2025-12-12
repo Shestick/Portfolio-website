@@ -34,9 +34,6 @@ body {
   overflow-x: hidden;
 }
 
-/* ========================================
-   Navigation
-   ======================================== */
 .navbar {
   position: fixed;
   top: 0;
@@ -121,9 +118,6 @@ body {
   transition: var(--transition);
 }
 
-/* ========================================
-   Hero Section
-   ======================================== */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -300,9 +294,6 @@ body {
   }
 }
 
-/* ========================================
-   Container & Section Styles
-   ======================================== */
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -322,9 +313,6 @@ body {
   color: var(--color-primary);
 }
 
-/* ========================================
-   About Section
-   ======================================== */
 .about {
   padding: 6rem 0;
   background: var(--color-bg-secondary);
@@ -449,9 +437,6 @@ body {
   transition: width 1s ease-out;
 }
 
-/* ========================================
-   Projects Section
-   ======================================== */
 .projects {
   padding: 6rem 0;
 }
@@ -655,9 +640,6 @@ body {
   height: 100%;
 }
 
-/* ========================================
-   Contact Section
-   ======================================== */
 .contact {
   padding: 6rem 0;
   background: var(--color-bg-secondary);
@@ -763,9 +745,6 @@ body {
   overflow-wrap: break-word;
 }
 
-/* ========================================
-   Footer
-   ======================================== */
 .footer {
   padding: 2rem;
   text-align: center;
@@ -783,9 +762,6 @@ body {
   color: var(--color-text-muted);
 }
 
-/* ========================================
-   Responsive Styles
-   ======================================== */
 @media (max-width: 768px) {
   .nav-menu {
     position: fixed;
