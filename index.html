@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danila Shestopalov | Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">&lt;Danila Shestopalov /&gt;</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="terminal-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="terminal-title">portfolio.exe</span>
+            </div>
+            <div class="hero-text">
+                <p class="hero-prefix"><span class="prompt">$</span> whoami</p>
+                <h1 class="hero-name">Danila Shestopalov</h1>
+                <p class="hero-title typing-effect">
+                    <span class="prompt">&gt;</span> Junior Developer & 3D Designer
+                </p>
+                <p class="hero-description">
+                    <span class="comment">// Passionate about creating interactive experiences</span><br>
+                    <span class="comment">// Using technical knowledge to realise creative ideas</span><br>
+                    <span class="comment">// Seeking new opportunities to learn and grow</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="btn-icon">▶</span> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span class="btn-icon">@</span> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">{</span> About Me <span class="title-bracket">}</span>
+            </h2>
+
+            <div class="about-grid">
+                <!-- Education -->
+                <div class="about-card">
+                    <div class="card-header">
+                        <span class="card-icon">📚</span>
+                        <h3>Education</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="education-item">
+                            <p class="edu-degree">Pursuing Bachelor's in Multimedia</p>
+                            <p class="edu-school">APU - Asia Pacific University</p>
+                            <p class="edu-year">2024 - 2027</p>
+                        </div>
+                        <div class="education-item">
+                            <p class="edu-degree">Electronics, Photonics, Molecular Physics</p>
+                            <p class="edu-school">MIPT - Moscow Universe of Physics &Aacute; Technology</p>
+                            <p class="edu-year">2020 - 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="about-card">
+                    <div class="card-header">
+                        <span class="card-icon">⚡</span>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML / CSS / JavaScript</span>
+                                    <span class="skill-level">Web Development</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="65"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">C#</span>
+                                    <span class="skill-level">Game Dev / Backend</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="50"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">Scripting / Automation</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="60"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">3D Design</span>
+                                    <span class="skill-level">Blender / Unity</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">[</span> Projects <span class="title-bracket">]</span>
+            </h2>
+
+            <div class="projects-list">
+                <!-- Project 1 Template -->
+                <div class="project-item">
+                    <button class="project-header" aria-expanded="false">
+                        <div class="project-info">
+                            <span class="project-number">01</span>
+                            <div class="project-title-wrap">
+                                <h3 class="project-title">Assimilation</h3>
+                                <span class="project-tech">GDScript • Godot • 3D • Blender</span>
+                            </div>
+                        </div>
+                        <span class="project-toggle">
+                            <span class="toggle-icon">+</span>
+                        </span>
+                    </button>
+                    <div class="project-content">
+                        <div class="project-details">
+                            <img src="ProjectOneImg.png" alt="Project One Cover" class="project-cover">
+
+                            <div class="project-description">
+                                <p>
+                                    <span class="code-keyword">const</span> <span class="code-var">description</span> = <span class="code-string">"A 3D insect simulator created for Malaysia Indie Jam 2025, I worked on the environment, specifically props and hostile creatures"</span>;
+                                </p>
+                            </div>
+                            <div class="project-features">
+                                <h4>// Key Features</h4>
+                                <ul>
+                                    <li>Procedural creature leg animation</li>
+                                    <li>Consumption mechanic, replenishing your health</li>
+                                    <li>Consume and collect samples to extract from the planet</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Miisan-png/Assimilation-" class="project-link" target="_blank">
+                                    <span class="link-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                    </span>
+                                    View Code
+                                </a>
+                                <a href="https://miisan.itch.io/ass" class="project-link" target="_blank">
+                                    <span class="link-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </span>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 Template -->
+                <div class="project-item">
+                    <button class="project-header" aria-expanded="false">
+                        <div class="project-info">
+                            <span class="project-number">02</span>
+                            <div class="project-title-wrap">
+                                <h3 class="project-title">Luggage Buds</h3>
+                                <span class="project-tech">C# • Unity • Web</span>
+                            </div>
+                        </div>
+                        <span class="project-toggle">
+                            <span class="toggle-icon">+</span>
+                        </span>
+                    </button>
+                    <div class="project-content">
+                        <div class="project-details">
+                            <img src="ProjectTwoImg.png" alt="Project Two Cover" class="project-cover">
+                            <div class="project-description">
+                                <p>
+                                    <span class="code-keyword">const</span> <span class="code-var">description</span> = <span class="code-string">"Brief description of your second project. Explain what it does, the problem it solves, and your role in its development."</span>;
+                                </p>
+                            </div>
+                            <div class="project-features">
+                                <h4>// Key Features</h4>
+                                <ul>
+                                    <li>Sort items to bags based on Characters' attitude</li>
+                                    <li>For each of them, arrange items in a grid-based suitcase</li>
+                                </ul>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jansonfoo/RedGameJam2025" class="project-link" target="_blank">
+                                    <span class="link-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                        </svg>
+                                    </span>
+                                    View Code
+                                </a>
+                                <a href="https://psychicflash.itch.io/luggage-buds" class="project-link" target="_blank">
+                                    <span class="link-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </span>
+                                    Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">&lt;</span> Contact <span class="title-bracket">/&gt;</span>
+            </h2>
+
+            <p class="contact-intro">
+                <span class="prompt">$</span> echo "Let's connect and build something amazing together!"
+            </p>
+
+            <div class="contact-buttons">
+                <a href="mailto:danila.shestopalov@gmail.com" class="contact-btn email">
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </span>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">danila.shestopalov@gmail.com</span>
+                </a>
+
+                <a href="https://github.com/Shestick" target="_blank" class="contact-btn github">
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </span>
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">@Shestick</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/shestick/" target="_blank" class="contact-btn linkedin">
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </span>
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">/in/shestick</span>
+                </a>
+
+                <a href="https://wa.me/601172633249" target="_blank" class="contact-btn whatsapp">
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                    </span>
+                    <span class="contact-label">WhatsApp</span>
+                    <span class="contact-value">+60 (117) 263-3249</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <span class="comment">/* Built with passion and lots of coffee */</span>
+            </p>
+            <p class="footer-copyright">© 2025 Danila Shestopalov. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
